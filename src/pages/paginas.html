@@ -1,0 +1,77 @@
+---
+titulo: paginas
+---
+<div class="contenedor">
+  <div class="grid-x grid-padding-x">
+    
+    <form action="#" class="paginas-form">
+      <h2>Inscripción <span>Páginas Web</span></h2>
+      <div class="medium-6 large-8 small-6 cell">
+        <label>Nombre/s
+          <input type="text" name="nombre" placeholder="Wallace Rudolph" required>
+        </label>
+      </div>
+      <div class="medium-6 large-8 small-6 cell">
+        <label>Apellidos
+          <input type="text" name="apellido" placeholder="West" required>
+        </label>
+      </div>
+      <div>
+        <label>Email
+          <input type="email" name="email" placeholder="email" required>
+        </label>
+      </div>
+      <div>
+        <label for="muni">Municipio
+          <input list="muni" required>
+          <datalist id="muni">
+            {{#each muni.mun}}
+            <option value="{{this.name}}">
+              {{/each}}
+          </datalist>
+        </label>
+      </div>
+      <div>
+        <label>Ultimos estudios
+          <input list="titulos" required>
+          <datalist id="titulos">
+            <option value="Primaria">
+            <option value="Secundaria">
+            <option value="Bachillerato">
+            <option value="Tecnico">
+            <option value="Universidad">
+            <option value="Postgrado">
+            <option value="Maestria">
+            <option value="Doctorado">
+          </datalist>
+        </label>
+      </div>
+      <div>
+        <label>Telefono
+          <input required type="tel" name="telefono" id="telefono" placeholder="77554488" pattern="[0-9]{8}"
+            maxlength="8">
+        </label>
+      </div>
+      <h4>Configurar Tarjeta de crédito</h4>
+      <div>
+        <label>Numero de tarjeta
+          <input type="number" name="tarjeta" id="tarjeta" maxlength="19"
+            placeholder="XXX(poner unicamente los numeros)" max="9999999999999999999" required>
+        </label>
+      </div>
+      <div>
+        <label>Código de seguridad CVV
+          <input type="text" name="cvv" id="cvv" maxlength="4" placeholder="CVV" pattern="[a-z]{1,4}" required>
+        </label>
+      </div>
+      <div>
+        <label>Fecha de expiracion
+          <input type="month" name="mes" id="mes" data-date-foramt="dd/mm/aa">
+        </label>
+      </div>
+      <div>
+        <input type="submit" class="button expanded" value="Enviar">
+      </div>
+    </form>
+  </div>
+</div>

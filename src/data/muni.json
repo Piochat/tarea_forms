@@ -1,0 +1,22 @@
+{
+    "title" : "Jutiapa",
+        "mun" : [
+            {"name" : "Agua Blanca"},
+            {"name" : "Asunción Mita"},
+            {"name" : "Atescatempa"},
+            {"name" : "Comapa"},
+            {"name" : "Conguaco"},
+            {"name" : "El Adelanto"},
+            {"name" : "El Progreso"},
+            {"name" : "Jalpatagua"},
+            {"name" : "Jerez"},
+            {"name" : "Jutiapa"},
+            {"name" : "Moyuta"},
+            {"name" : "Pasaco"},
+            {"name" : "Quezada"},
+            {"name" : "San José Acatempa"},
+            {"name" : "Santa Catarina Mita"},
+            {"name" : "Yupiltepeque"},
+            {"name" : "Zapotitlán"}
+        ]
+}

@@ -1,0 +1,73 @@
+---
+titulo: empleo
+---
+
+<section>
+  <div class="contenedor">
+    <main class="contenido">
+      <h3 class="encabezado text-center">Formualrio de Solicitud de Empleo</h3>
+      <form action="#">
+        <div class="form-empleo-div">
+          <label for="nombre">Nombres</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre1 Nombre2" required>
+        </div>
+        <div class="form-empleo-div">
+          <label for="apellido">Apellidos</label>
+          <input type="text" id="apellido" mane="apellido" placeholder="Apellido1 Apellido2" required>
+        </div>
+        <div class="form-empleo-div">
+          <label for="dir">Dirección</label>
+          <input type="text" id="dir" name="dir" placeholder="Dirección de residencia" required>
+        </div>
+        <div class="form-empleo-div">
+          <label for="muni">Municipio</label>
+          <input list="muni" required>
+          <datalist id="muni">
+            {{#each muni.mun}}
+            <option value="{{this.name}}">
+              {{/each}}
+          </datalist>
+        </div>
+        <div class="form-empleo-div">
+          <label for="telefono">Teléfono</label>
+          <input required type="tel" name="telefono" id="telefono" placeholder="77554488" pattern="[0-9]{8}"
+            maxlength="8">
+        </div>
+        <div class="form-empleo-div">
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" placeholder="example@sample.com" required>
+        </div>
+        <div class="form-empleo-div">
+          <label for="fecha">Fecha de Nacimiento</label>
+          <input type="date" name="fecha" id="fecha" placeholder="24/12/2005" required>
+        </div>
+        <div class="form-empleo-div">
+          <label for="edad">Edad</label>
+          <input type="number" name="edad" id="edad" placeholder="XXX" max="99" min="1" maxlength="3"
+            pattern="[0-9]{2}">
+        </div>
+        <div class="form-empleo-div">
+          <label for="estado">Estado</label>
+          <input list="estado">
+          <datalist id="estado">
+            <option value="Soltero" label="Soltero">
+            <option value="Casado" label="Casado">
+          </datalist>
+        </div>
+        <div class="form-empleo-div">
+          <label for="genero">Genero</label>
+          <input type="radio" name="genero" id="masculino" value="M">M
+          <input type="radio" name="genero" id="femenino" value="F">F
+        </div>
+        <div class="form-empleo-div" required>
+          <label for="nit">NIT</label>
+          <input type="number" name="nit" id="nit" placeholder="XXX" pattern="[09]{6,}">
+        </div>
+        <div class="form-empleo-div">
+          <input type="submit" value="Enviar" class="button">
+          <input type="reset" class="button success">
+        </div>
+      </form>
+    </main>
+  </div>
+</section>

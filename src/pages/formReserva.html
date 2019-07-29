@@ -1,0 +1,50 @@
+---
+titulo: hotel
+---
+
+<div class="contenedor">
+  <div class="translucent-form-overlay">
+    <form>
+      <h3>Reserve su habitación</h3>
+      <div class="row columns">
+        <label>Nombre
+          <input type="text" name="nombre" placeholder="Américo Vespucio" required>
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Email
+          <input type="email" name="email" id="email" placeholder="example@sample.com" required>
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Tel
+          <input required type="tel" name="telefono" id="telefono" placeholder="77554488" pattern="[0-9]{8}"
+            maxlength="8">
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Fecha de Reservación
+            <input type="date" name="fecha" id="fecha" placeholder="24/12/2005" required>
+        </label>
+      </div>
+      <div class="row columns">
+          <label>Fecha de Salida
+              <input type="date" name="fechas" id="fechas" placeholder="24/12/2005" required>
+          </label>
+        </div>
+      <div class="row">
+        <label class="columns small-12">Precio</label>
+        <div class="columns small-6">
+          <input type="number" min="0" name="min" placeholder="Min" step="1">
+        </div>
+        <div class="columns small-6">
+          <input type="number" min="0" name="max" placeholder="Max" step="1">
+        </div>
+      </div>
+      <button type="button" class="primary button expanded search-button">
+        Buscar y Reservar
+      </button>
+    </form>
+  </div>
+
+</div>
