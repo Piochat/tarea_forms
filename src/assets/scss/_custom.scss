@@ -12,6 +12,10 @@
   background-image: url(../img/grande/gV.jpg);
 }
 
+.medic {
+  background-image: url(../img/grande/gMe.jpg);
+}
+
 .hotel {
     background-image: url(../img/small/sT.jpg);
     @include breakpoint(medium) {

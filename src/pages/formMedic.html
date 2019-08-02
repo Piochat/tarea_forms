@@ -1,0 +1,55 @@
+---
+titulo: medic
+---
+
+<div class="contenedor">
+  <div class="translucent-form-overlay">
+    <form>
+      <h3>Registro Médico</h3>
+      <div class="row columns">
+        <label>Nombre
+          <input type="text" name="nombre" placeholder="Américo Vespucio" required>
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Email
+          <input type="email" name="email" id="email" placeholder="example@sample.com" required>
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Tel
+          <input required type="tel" name="telefono" id="telefono" placeholder="77554488" pattern="[0-9]{8}"
+            maxlength="8">
+        </label>
+      </div>
+      <div class="row columns">
+        <label>Genero
+            <select name="Genero" id="Genero">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </label>
+      </div>
+      <div class="row columns">
+          <label>Edad
+            <input type="number" name="edad" id="edad" placeholder="XXX" max="99" min="1" maxlength="3"
+            pattern="[0-9]{2}">
+          </label>
+        </div>
+      <div class="row">
+        <label class="columns small-12">Estatrua cm</label>
+        <div class="columns small-6">
+          <input type="number" min="0" name="min" placeholder="XXX" >
+        </div>
+        <label class="columns small-12">Peso en Kg</label>
+        <div class="columns small-6">
+          <input type="number" min="0" name="max" placeholder="XXX" >
+        </div>
+      </div>
+      <button type="button" class="primary button expanded search-button">
+        Enviar
+      </button>
+    </form>
+  </div>
+
+</div>
